@@ -1,0 +1,34 @@
+Signin - http://localhost:8000/api/use/signin  (POST)
+
+
+
+Login - http://localhost:8000/api/use/login  (POST)
+
+
+
+Get user Data from Jwt token - http://localhost:8000/api/use/getdata  (GET)
+Header:{
+    "token":JWT_Token
+    }
+
+
+
+Get user Data from name - http://localhost:8000/api/use/getdata  (GET)
+Header:{
+    "name": username
+    }
+
+
+
+Create a Post - http://localhost:8000/api/post/user/create  (POST)
+Header:{
+    "token":JWT_Token
+    }
+
+    
+
+
+Read all post of a user - http://localhost:8000/api/post/user/read  (POST)
+Header:{
+    "token":JWT_Token
+    }
