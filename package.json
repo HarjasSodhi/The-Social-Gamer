@@ -1,0 +1,25 @@
+{
+  "name": "the-social-gamer",
+  "version": "1.0.0",
+  "description": "This is a social media website for gamers to come together and share there high-scores and meet cool players like them.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarjasSodhi/The-Social-Gamer.git"
+  },
+  "author": "Rupin Vijan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarjasSodhi/The-Social-Gamer/issues"
+  },
+  "homepage": "https://github.com/HarjasSodhi/The-Social-Gamer#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12"
+  }
+}
