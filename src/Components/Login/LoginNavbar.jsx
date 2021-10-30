@@ -9,8 +9,8 @@ let LoginNavbar=()=>{
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="../login page/index.html"><i class="uil uil-signin"></i>Login</a></li>
-                <li><a href="../sign-up/index.html"><i class="uil uil-user"></i>Sign Up</a></li>
+                <li><a href="/login"><i class="uil uil-signin"></i>Login</a></li>
+                <li><a href="/signup"><i class="uil uil-user"></i>Sign Up</a></li>
             </ul>
         </div>
     </nav>

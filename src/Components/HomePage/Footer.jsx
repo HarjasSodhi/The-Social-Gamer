@@ -16,11 +16,11 @@ let Footer =()=>{
             <div class="footer-left">
 
                 <p class="footer-links">
-                    <a class="link-1" href="#">Home</a>
+                    <a class="link-1" href="/home">Home</a>
 
-                    <a href="#">Messages</a>
+                    <a href="/chat">Messages</a>
 
-                    <a href="#">My Proflie</a>
+                    <a href="/profile">My Proflie</a>
                 </p>
 
                 <p>Gamers Social &copy; 2021</p>

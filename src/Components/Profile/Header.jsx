@@ -4,7 +4,7 @@ let Header = () => {
             <div class="container">
                 <div class="profile">
                     <div class="profile-image">
-                        <img src="./Profile/profile-1.jpg" alt="" />
+                        <img src="/Profile/profile-1.jpg" alt="" />
                     </div>
                     <div class="profile-user-settings">
                         <h1 class="profile-user-name">ria</h1>
