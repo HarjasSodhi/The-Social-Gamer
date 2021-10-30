@@ -51,7 +51,7 @@ let Box = () => {
                                 }} />
                             </form>
                             <div class="form-btns">
-                                <a href="../login page/index.html" class="already-acount">Already Have Account?</a>
+                                <a href="/login" class="already-acount">Already Have Account?</a>
                             </div>
                         </div>
                     </div>

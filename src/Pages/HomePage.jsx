@@ -11,5 +11,6 @@ let HomePage = () => {
             <Footer />
         </>
     )
+    
 }
 export default HomePage;

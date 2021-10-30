@@ -1,4 +1,5 @@
 import './HomePage.css'
+import {Link} from 'react-router-dom' 
 
 let Footer =()=>{
     return(
@@ -16,11 +17,11 @@ let Footer =()=>{
             <div class="footer-left">
 
                 <p class="footer-links">
-                    <a class="link-1" href="/home">Home</a>
+                    <Link to="/home">Home</Link>
 
-                    <a href="/chat">Messages</a>
+                    <Link to="/chat">Messages</Link>
 
-                    <a href="/profile">My Proflie</a>
+                    <Link to="/profile">My Proflie</Link>
                 </p>
 
                 <p>Gamers Social &copy; 2021</p>
