@@ -83,5 +83,17 @@ router.post('/create',fetchuser,async(req,res)=>{
     }
 })
 
+router.get('/allpost' ,  async(req,res)=>{
+
+    try {
+        const notemodel= mongoose.model('notes',postSchema);
+        const notesdata = await notemodel.find()
+        res.status(200).send(notesdata);
+        
+    } catch (error) {
+        res.status(500).send({"error":"INternal server error"})
+    }
+})
+
 
 module.exports=router;

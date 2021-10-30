@@ -32,3 +32,6 @@ Read all post of a user - http://localhost:8000/api/post/user/read  (POST)
 Header:{
     "token":JWT_Token
     }
+
+
+All post for the front page - http://localhost:8000/api/post/user/allpost  (GET)
