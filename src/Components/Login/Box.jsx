@@ -23,7 +23,7 @@ let Box = () => {
                             }} />
                             <input type="submit" value="Log In" onClick={(e) => {
                                 e.preventDefault();
-                                fetch('http://localhost:8000/api/use/login', {
+                                fetch('/api/use/login', {
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json',

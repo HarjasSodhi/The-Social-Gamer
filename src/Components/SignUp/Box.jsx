@@ -22,7 +22,7 @@ let Box = () => {
                                 <input type="Submit" value="Sign In" class="signin" onClick={(e) => {
                                     e.preventDefault();
                                     let inps = document.querySelectorAll('.signin');
-                                    fetch('http://localhost:8000/api/use/signin', {
+                                    fetch('/api/use/signin', {
                                         method: 'POST',
                                         headers: {
                                             'Content-Type': 'application/json',

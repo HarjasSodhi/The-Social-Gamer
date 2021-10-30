@@ -8,7 +8,7 @@ let Feed = () => {
 
     const handlesub=async(e)=>{
         e.preventDefault();
-                                fetch('http://localhost:8000/api/use/login', {
+                                fetch('/api/use/login', {
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json',
@@ -34,12 +34,12 @@ let Feed = () => {
     const [usee, setusee] = useState([])
     const [postt, setpostt] = useState("")
     async function ne(){
-        const det= await fetch('http://localhost:8000/api/post/user/allpost');
+        const det= await fetch('/api/post/user/allpost');
         const resdata = await det.json();
         setdata(resdata);
     }
     async function nee(){
-        const det= await fetch('http://localhost:8000/api/use/getdata', {
+        const det= await fetch('/api/use/getdata', {
             headers:{
                 "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxN2JiYmJiYzllOWJhNjhjYjk0N2NhYiIsImlhdCI6MTYzNTQ5ODkzOX0.QLYj5aooLp8YOFCrs94G0bHBkyRoyjPUPQpwl-WoyGc"
             }
