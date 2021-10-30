@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 let LoginNavbar=()=>{
     return (
         <nav class="navbar">
@@ -10,8 +10,8 @@ let LoginNavbar=()=>{
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="/login"><i class="uil uil-signin"></i>Login</a></li>
-                <li><a href="/signup"><i class="uil uil-user"></i>Sign Up</a></li>
+                <li><Link to="/login"><i class="uil uil-signin"></i>Login</Link></li>
+                <li><Link to="/signup"><i class="uil uil-user"></i>Sign Up</Link></li>
             </ul>
         </div>
     </nav>

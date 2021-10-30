@@ -1,4 +1,4 @@
-import { Redirect } from 'react-router-dom'
+import {Link, Redirect } from 'react-router-dom'
 import { useContext } from 'react';
 import { userContext } from '../../App'
 let Box = () => {
@@ -22,7 +22,7 @@ let Box = () => {
                                 <input type="Submit" value="Sign In" class="signin" onClick={(e) => {
                                     e.preventDefault();
                                     let inps = document.querySelectorAll('.signin');
-                                    fetch('/api/use/signin', {
+                                    fetch('http://localhost:8000/api/use/signin', {
                                         method: 'POST',
                                         headers: {
                                             'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ let Box = () => {
                                 }} />
                             </form>
                             <div class="form-btns">
-                                <a href="/login" class="already-acount">Already Have Account?</a>
+                                <Link to="/login" class="already-acount">Already Have Account?</Link>
                             </div>
                         </div>
                     </div>

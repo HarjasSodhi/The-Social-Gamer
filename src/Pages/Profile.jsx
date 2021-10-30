@@ -12,7 +12,7 @@ let Profile = () => {
     const[currUser,setCurrUser]=useState({});
 
     useEffect(() => {
-        fetch('/api/use/getdata',{
+        fetch('http://localhost:8000/api/use/getdata',{
             headers: {
                 'token': user.state,
             }

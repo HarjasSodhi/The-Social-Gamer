@@ -15,9 +15,9 @@ let Navbar = () => {
             </a>
             <div class="navbar-links">
                 <ul>
-                    <li><Link href="/home"><i class="uil uil-home"></i> Home</Link></li>
-                    <li><Link href="/chat"><i class="uil uil-message"></i> Messages</Link></li>
-                    <li><Link href="/profile"><i class="uil uil-user"></i> My Profile</Link></li>
+                    <li><Link to="/home"><i class="uil uil-home"></i> Home</Link></li>
+                    <li><Link to="/chat"><i class="uil uil-message"></i> Messages</Link></li>
+                    <li><Link to="/profile"><i class="uil uil-user"></i> My Profile</Link></li>
                 </ul>
             </div>
         </nav>
