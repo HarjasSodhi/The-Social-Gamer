@@ -3,11 +3,11 @@ let LoginNavbar=()=>{
     return (
         <nav class="navbar">
         <div class="brand-title"><img src="./images/logo2.png" alt="" /></div>
-        <a href="#" class="toggle-button">
+        <Link to="/" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>
+        </Link>
         <div class="navbar-links">
             <ul>
                 <li><Link to="/login"><i class="uil uil-signin"></i>Login</Link></li>

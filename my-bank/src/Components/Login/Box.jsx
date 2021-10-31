@@ -10,9 +10,9 @@ let Box = () => {
             <div class="themessLogin">
                 <div class="form">
                     <div class="login-form">
-                        <a href="#" class="form-cancel">
+                        <Link to="/" class="form-cancel">
                             <i class="uil uil-times"></i>
-                        </a>
+                        </Link>
                         <strong>Log In</strong>
                         <form>
                             <input type="email" placeholder="Example@gmail.com" value={name} name="email" required onChange={(e) => {
@@ -23,7 +23,7 @@ let Box = () => {
                             }} />
                             <input type="submit" value="Log In" onClick={(e) => {
                                 e.preventDefault();
-                                fetch('http://localhost:8000/api/use/login', {
+                                fetch('/api/use/login', {
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ let Box = () => {
                                 })
                                     .then(response => response.json())
                                     .then(data => {
-                                        if(data.token==undefined){
+                                        if(data.token===undefined){
                                             alert('Email id or password wrong');
                                         }
                                         else{

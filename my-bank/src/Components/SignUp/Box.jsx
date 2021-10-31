@@ -9,9 +9,9 @@ let Box = () => {
                 <div class="themessSignUp">
                     <div class="form">
                         <div class="sign-up-form">
-                            <a href="#" class="form-cancel">
+                            <Link to="/" class="form-cancel">
                                 <i class="uil uil-times"></i>
-                            </a>
+                            </Link>
                             <strong>Sign Up</strong>
                             <form>
                                 <input type="text" placeholder="Username" name="username" class="signin" required />
@@ -22,22 +22,22 @@ let Box = () => {
                                 <input type="Submit" value="Sign In" class="signin" onClick={(e) => {
                                     e.preventDefault();
                                     let inps = document.querySelectorAll('.signin');
-                                    fetch('http://localhost:8000/api/use/signin', {
+                                    fetch('/api/use/signin', {
                                         method: 'POST',
                                         headers: {
                                             'Content-Type': 'application/json',
                                         },
                                         body: JSON.stringify({
                                             name: inps[0].value,
-                                            email: inps[2].value,
-                                            password: inps[3].value,
-                                            game: inps[4].value,
-                                            about: inps[5].value
+                                            email: inps[1].value,
+                                            password: inps[2].value,
+                                            game: inps[3].value,
+                                            about: inps[4].value
                                         }),
                                     })
                                         .then(response => response.json())
                                         .then(data => {
-                                            if(data.token==undefined){
+                                            if(data.token===undefined){
                                                 alert('Email id already exists');
                                             }
                                             else{

@@ -8,11 +8,11 @@ let Navbar = () => {
                 <i class="uil uil-search sl"></i>
                 <input type="search" placeholder="Search for creators, inspirations, and projects" />
             </div>
-            <a href="#" class="toggle-button">
+            <Link to="/" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </a>
+            </Link>
             <div class="navbar-links">
                 <ul>
                     <li><Link to="/home"><i class="uil uil-home"></i> Home</Link></li>

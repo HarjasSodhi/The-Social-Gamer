@@ -1,5 +1,5 @@
 import Post from './Post'
-import { Redirect } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import { useContext } from 'react';
 import { userContext } from '../../App'
@@ -12,7 +12,7 @@ let Feed = () => {
     
     const handlesub=async(e)=>{
         e.preventDefault();
-                               const res= await fetch('http://localhost:8000/api/post/user/create', {
+                               const res= await fetch('/api/post/user/create', {
                                     method: 'POST',
                                     headers: {
                                         'token':user.state
@@ -24,12 +24,12 @@ let Feed = () => {
                                 console.log(dat)
     }
     async function ne(){
-        const det= await fetch('http://localhost:8000/api/post/user/allpost');
+        const det= await fetch('/api/post/user/allpost');
         const resdata = await det.json();
         setdata(resdata);
     }
     async function nee(){
-        const det= await fetch('http://localhost:8000/api/use/getdata', {
+        const det= await fetch('/api/use/getdata', {
             headers:{
                 "token":user.state
             }
@@ -43,14 +43,14 @@ let Feed = () => {
         nee();
     },[])
     return (
-        // user.state==null  ? <Redirect to="/login" /> :
+        user.state==null  ? <Redirect to="/login" /> :
         <div class="themess">
             <main>
                 <div class="container">
                     <div class="left">
-                        <a class="profile">
+                        <Link class="profile">
                             <div class="profile-photo">
-                                <img src="./images/profile-1.jpg" />
+                                <img src="./images/profile-1.jpg" alt="x" />
                             </div>
                             <div class="handle" >
                                 <h4>{usee.name}</h4>
@@ -58,13 +58,13 @@ let Feed = () => {
                                     {usee.about}
                                 </p>
                             </div>
-                        </a>
+                        </Link>
                         <label for="create-post" class="btn btn-primary">Create Post</label>
                     </div>
                     <div class="middle">
                         <form class="create-post" onSubmit={handlesub} method='POST'>
                             <div class="profile-photo">
-                                <img src="./images/profile-1.jpg" />
+                                <img src="./images/profile-1.jpg" alt="x" />
                             </div>
                             <input type="text" placeholder="Whats on your mind, Ria?" name='postStatus' id="create-post" onChange={(e)=>{
                                 setpostt(e.currentTarget.value)
