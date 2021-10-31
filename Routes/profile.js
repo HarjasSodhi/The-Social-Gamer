@@ -3,11 +3,11 @@ const router =express.Router()
 var jwt = require('jsonwebtoken');
 var byname=require("../middleware/byname");
 
-const jwt_token="RupinVijan"
+const jwt_token=""
 
 const mongoose=require('mongoose');
 const { appendFile } = require('fs');
-MongoDbURL='mongodb+srv://lms:rupin@cluster0.jbvdn.mongodb.net/social-user';
+MongoDbURL='';
 mongoose.connect(MongoDbURL);
 var db=mongoose.connection;
 

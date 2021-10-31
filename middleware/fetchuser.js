@@ -1,6 +1,6 @@
 var jwt = require('jsonwebtoken');
 
-const jwt_token="RupinVijan"
+const jwt_token=""
 
 const fetchuser=(req , res , next)=>{
     const token=req.header("token")

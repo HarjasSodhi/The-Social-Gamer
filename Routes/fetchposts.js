@@ -3,10 +3,10 @@ const router =express.Router()
 var jwt = require('jsonwebtoken');
 var fetchuser=require("../middleware/fetchuser");
 
-const jwt_token="RupinVijan"
+const jwt_token=""
 
 const mongoose=require('mongoose')
-MongoDbURL='mongodb+srv://lms:rupin@cluster0.jbvdn.mongodb.net/social-user';
+MongoDbURL='';
 mongoose.connect(MongoDbURL);
 var db=mongoose.connection;
 
